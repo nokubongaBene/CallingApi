@@ -40,7 +40,7 @@ const  apiCall=  () =>{
     
 }
     return(
-        <View>
+        <View style={styles.container}>
             <ScrollView>
              {articlesResponse.map((item, index) =>{
                  return(
@@ -54,3 +54,34 @@ const  apiCall=  () =>{
         </View>
     )
 }
+const styles = StyleSheet.create({
+    container:{
+    flex: 1,
+    backgroundColor: Colors.blanchedalmond,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 2,
+},
+itemTitle: {
+    fontSize: 24, 
+    padding: 5,
+    color: Colors.black
+},
+itemContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    height: 100,
+    width:370,
+    flex: 1,
+    borderRadius: 20,
+    marginHorizontal:20,
+    marginVertical: 10,
+    padding: 15,
+    backgroundColor: Colors.blanchedalmond
+    
+},
+icon: {
+
+}
+})
